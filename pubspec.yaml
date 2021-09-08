@@ -1,20 +1,18 @@
 name: async_resource
 description: Automatically cache network resources and use them when offline. Interface with local resources on any platform.
-version: 0.1.4
-author: Jacob Phillips <jifalops@gmail.com>
-homepage: https://github.com/jifalops/async_resource
+version: 0.2.0
+homepage: https://github.com/crimercbddev/async_resource
 
 environment:
-  sdk: ">=2.0.0 <3.0.0"
+  sdk: ">=2.10.3 <3.0.0"
 
 dependencies:
-  http: ^0.12.0
-  meta: ^1.0.0
-  path: ^1.0.0
-  service_worker: ^0.2.0
-  rxdart: ^0.18.0
-  flutter_mmkv: ^1.0.0
+  http: ^0.13.3
+  meta: ^1.7.0
+  path: ^1.8.0
+  service_worker: ^0.2.4
+  rxdart: ^0.27.2
 
 dev_dependencies:
-  mockito: ^3.0.0
-  test: ^1.0.0
+  # mockito: ^3.0.0
+  # test: ^1.0.0

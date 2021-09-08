@@ -41,8 +41,8 @@ class HttpNetworkResource<T> extends NetworkResource<T> {
   @override
   Future<dynamic> fetchContents() async {
     final response = await (client == null
-        ? http.get(url, headers: headers)
-        : client.get(url, headers: headers));
+        ? http.get(Uri.parse(url), headers: headers)
+        : client.get(Uri.parse(url), headers: headers));
     return (response != null && acceptedResponses.contains(response.statusCode))
         ? (binary ? response.bodyBytes : response.body)
         : null;
